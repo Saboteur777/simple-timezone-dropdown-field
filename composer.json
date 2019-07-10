@@ -1,0 +1,40 @@
+{
+    "name": "saboteur777/simple-timezone-dropdown-field",
+    "description": "A simple dropdown field for timezones",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "timezone field"
+    ],
+    "support": {
+        "docs": "https://github.com/saboteur777/simple-timezone-dropdown-field/blob/master/README.md",
+        "issues": "https://github.com/saboteur777/simple-timezone-dropdown-field/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ottó Radics",
+            "homepage": "https://www.webmenedzser.hu"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "saboteur777\\simpletimezonedropdownfield\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Timezone Field",
+        "handle": "timezone-field",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/saboteur777/simple-timezone-dropdown-field/master/CHANGELOG.md",
+        "class": "saboteur777\\simpletimezonedropdownfield\\TimezoneField"
+    }
+}
