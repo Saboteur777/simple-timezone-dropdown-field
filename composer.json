@@ -2,7 +2,7 @@
     "name": "saboteur777/simple-timezone-dropdown-field",
     "description": "A simple dropdown field for timezones",
     "type": "craft-plugin",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "keywords": [
         "craft",
         "cms",

@@ -31,7 +31,7 @@ use craft\helpers\Json;
  * https://craftcms.com/docs/plugins/field-types
  *
  * @author    Ottó Radics
- * @package   TimezoneField
+ * @package   SimpleTimezoneDropdownField
  * @since     1.0.0
  */
 class SimpleTimezoneDropdownField extends Field
@@ -121,7 +121,7 @@ class SimpleTimezoneDropdownField extends Field
 
         // Render the input template
         return Craft::$app->getView()->renderTemplate(
-            'timezone-field/_components/fields/_select',
+            'simple-timezone-dropdown-field/_components/fields/_select',
             [
                 'name' => $this->handle,
                 'value' => $value,
