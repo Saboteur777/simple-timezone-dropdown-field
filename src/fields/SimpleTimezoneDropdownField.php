@@ -10,7 +10,7 @@
 
 namespace saboteur777\simpletimezonedropdownfield\fields;
 
-use saboteur777\simpletimezonedropdownfield\TimezoneField;
+use saboteur777\simpletimezonedropdownfield\SimpleTimezoneDropdownFieldPlugin;
 
 use Craft;
 use craft\base\ElementInterface;
@@ -34,7 +34,7 @@ use craft\helpers\Json;
  * @package   TimezoneField
  * @since     1.0.0
  */
-class Timezone extends Field
+class SimpleTimezoneDropdownField extends Field
 {
     // Static Methods
     // =========================================================================
@@ -46,7 +46,7 @@ class Timezone extends Field
      */
     public static function displayName(): string
     {
-        return Craft::t('timezone-field', 'Timezone');
+        return Craft::t('simple-timezone-dropdown-field', 'Simple Timezone Dropdown Field');
     }
 
     // Public Methods

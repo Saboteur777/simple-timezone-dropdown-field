@@ -2,7 +2,7 @@
     "name": "saboteur777/simple-timezone-dropdown-field",
     "description": "A simple dropdown field for timezones",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "keywords": [
         "craft",
         "cms",
@@ -30,11 +30,11 @@
         }
     },
     "extra": {
-        "name": "Timezone Field",
-        "handle": "timezone-field",
+        "name": "Simple Timezone Dropdown Field",
+        "handle": "simple-timezone-dropdown-field",
         "hasCpSettings": false,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/saboteur777/simple-timezone-dropdown-field/master/CHANGELOG.md",
-        "class": "saboteur777\\simpletimezonedropdownfield\\TimezoneField"
+        "class": "saboteur777\\simpletimezonedropdownfield\\SimpleTimezoneDropdownFieldPlugin"
     }
 }

@@ -10,7 +10,7 @@
 
 namespace saboteur777\simpletimezonedropdownfield;
 
-use saboteur777\simpletimezonedropdownfield\fields\Timezone as Timezone;
+use saboteur777\simpletimezonedropdownfield\fields\SimpleTimezoneDropdownField;
 
 use Craft;
 use craft\base\Plugin;
@@ -32,20 +32,20 @@ use yii\base\Event;
  * https://craftcms.com/docs/plugins/introduction
  *
  * @author    Ottó Radics
- * @package   TimezoneField
+ * @package   SimpleTimezoneDropdownFieldPlugin
  * @since     1.0.0
  *
  */
-class TimezoneField extends Plugin
+class SimpleTimezoneDropdownFieldPlugin extends Plugin
 {
     // Static Properties
     // =========================================================================
 
     /**
      * Static property that is an instance of this plugin class so that it can be accessed via
-     * TimezoneField::$plugin
+     * SimpleTimezoneDropdownFieldPlugin::$plugin
      *
-     * @var TimezoneField
+     * @var SimpleTimezoneDropdownFieldPlugin
      */
     public static $plugin;
 
@@ -64,7 +64,7 @@ class TimezoneField extends Plugin
 
     /**
      * Set our $plugin static property to this class so that it can be accessed via
-     * TimezoneField::$plugin
+     * SimpleTimezoneDropdownFieldPlugin::$plugin
      *
      * Called after the plugin class is instantiated; do any one-time initialization
      * here such as hooks and events.
@@ -83,7 +83,7 @@ class TimezoneField extends Plugin
             Fields::class,
             Fields::EVENT_REGISTER_FIELD_TYPES,
             function(RegisterComponentTypesEvent $event) {
-                $event->types[] = Timezone::class;
+                $event->types[] = SimpleTimezoneDropdownField::class;
             }
         );
     }
